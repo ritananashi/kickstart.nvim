@@ -1017,3 +1017,4 @@ require('lazy').setup({
 
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>')
