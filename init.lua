@@ -1018,3 +1018,5 @@ require('lazy').setup({
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>')
+vim.opt.termguicolors = true -- 24 ビットカラーを使用
+vim.opt.background = 'dark' -- ダークカラーを使用する
