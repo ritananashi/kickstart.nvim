@@ -4,9 +4,13 @@
 -- See the kickstart.nvim README for more information
 return {
   {
-    'norcalli/nvim-colorizer.lua',
+    'brenoprata10/nvim-highlight-colors',
     config = function()
-      require('colorizer').setup()
+      vim.opt.termguicolors = true
+      require('nvim-highlight-colors').setup {
+        render = 'foreground',
+        enable_tailwind = true,
+      }
     end,
   },
 }
