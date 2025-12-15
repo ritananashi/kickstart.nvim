@@ -1016,8 +1016,9 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.expandtab = true -- タブ文字をスペースにする
+vim.opt.shiftwidth = 2 -- インデントの幅を2にする
+vim.opt.tabstop = 2 -- タブの表示幅を2にする
 vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>')
 vim.opt.termguicolors = true -- 24 ビットカラーを使用
 vim.opt.background = 'dark' -- ダークカラーを使用する
