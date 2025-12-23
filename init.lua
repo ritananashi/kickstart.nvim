@@ -778,7 +778,7 @@ require('lazy').setup({
           return nil
         else
           return {
-            timeout_ms = 500,
+            timeout_ms = 2500,
             lsp_format = 'fallback',
           }
         end
@@ -794,7 +794,7 @@ require('lazy').setup({
         javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
         typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
       },
-      format_on_save = { timeout_ms = 500, lsp_fallback = true },
+      format_on_save = { timeout_ms = 2500, lsp_fallback = true },
     },
   },
 
